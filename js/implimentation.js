@@ -1,0 +1,1 @@
+document.write("Hello world i am come from external file");

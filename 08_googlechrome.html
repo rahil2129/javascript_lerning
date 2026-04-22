@@ -7,18 +7,44 @@
 
     <script>
         var x = ['html', 'css', 'js'];
-        console.time();
+        console.time();        
         console.log("Hello Rahil");
+        document.write("<br>");
         console.warn("Tetsing");
+        document.write("<br>");
         console.error("Error");
+        document.write("<br>");
         console.table(x);
+        document.write("<br>");
         console.timeEnd();
+        document.write("<br>");
         document.getElementById('test');
-        document.getElementsByClassName('abc')
+        document.write("<br>");
+        document.getElementsByClassName('abc');
+        document.write("<br>");
+
+
+        var a = 20;
+        console.time("Start");
+        console.log(a + 80);
+        console.error("Something went wrong");
+        console.warn("This is just warning");
+        console.warn("This is just warning");
+        console.warn("This is just warning");
+        console.warn("This is just warning");
+        console.warn("This is just warning");
+        var aa = ['HTML', 'CSS', 'JS'];
+        console.log(aa);
+        console.table(aa);
+        console.timeEnd("Start");
+        
     </script>
 </head>
 <body>
     <h1 id="test">Hello World</h1>
     <h2 class="abc">Hello World</h2>
+    <script>
+        
+    </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function with Return Value</title>
+    <script>
+        function fullname(fname = "", lname = "") {
+            var a = fname + " - " + lname;
+
+            return a;
+        }
+
+        var fn = fullname("Rahil", "Shaikh");
+        document.write(fn);
+        document.write("<br>");
+
+        /* Sum function*/
+        function sum(a, b, c) {
+            var s = a + b + c;
+
+            return s;
+        }
+
+        var total = sum(99, 98, 99);
+        document.write(total);
+        document.write("<br>");
+        /* Percentage function*/
+        function percentage(tt) {
+            var per = tt/300 * 100;
+            
+            return per;
+        }
+
+        var percen = percentage(total);
+        document.write(percen);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

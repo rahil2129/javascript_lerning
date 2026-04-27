@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find And FindIndex Array</title>
+    <script>
+        var a = ["Rahil", "Mufaddal", "Arsh", "Ammar", "Zaqwan"];
+        var c = [15, 12, 10, 25, 56, 120];
+        document.write(a + "<br> <br>");
+      
+        var b = c.find(findName); // Find() method returns the value of the first element in an array that pass a test
+
+        document.write(b + "<br> <br>");
+        function findName(fname) {
+            return fname >= 100;
+        }
+
+        var d = c.findIndex(returnIndex); // FindIndex() method returns the index of the element in an array that pass a test
+        document.write(d + "<br> <br>");
+
+        function returnIndex(ages) {
+            return ages >= 50;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

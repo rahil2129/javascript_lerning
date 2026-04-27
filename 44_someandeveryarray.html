@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some & Every Array</title>
+    <script>
+        var a = ["Rahil", "Mufaddal", "Arsh", "Arkan", "Zaqwan", "Aslan"];
+        var age = [18, 32, 31, 35, 25, 22];
+        document.write(a + "<br><br>");
+        var b = a.some(agesadult); // Make the fucntion and check value is exists or not
+        document.write(b + "<br><br>");
+        function agesadult(age) {
+            return age == "Mufaddal";
+        }
+
+        var c = a.every(checkingname);
+        document.write(c + "<br><br>");
+        function checkingname(names) {
+            return names == "Rahil";
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

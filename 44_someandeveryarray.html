@@ -19,6 +19,22 @@
         function checkingname(names) {
             return names == "Rahil";
         }
+
+
+        var fname = ["Mufaddal", "Mufaddal", "Mufaddal", "Mufaddal"];
+
+        document.write("<br>" + fname  + "<br>");
+        var checkname = fname.some(checknameof); //For check value in array is available or not then return true and fa
+        document.write("<br>" + checkname  + "<br>");
+        function checknameof(names) {
+            return names == "Salmankhana";
+        }
+
+        var everyname = fname.every(everynames);
+        document.write("<br>" + everyname  + "<br>");
+        function everynames(names) {
+            return names == "Mufaddal";
+        }
     </script>
 </head>
 <body>

@@ -14,6 +14,19 @@
         function checkage(age) {
             return age >= 18;
         }
+
+        // Filter Array function
+
+        var a = ["Rahil", "Rahu", "Mufaddal", "Shaikh", "Rahil"];
+        document.write("<br><br>" + a + "<br><br>")
+
+        var c = a.filter(checkname);
+        document.write("<br><br>" + c + "<br><br>")
+
+        function checkname(name) {
+            return name == 'Rahil';
+        }
+
     </script>
 </head>
 <body>

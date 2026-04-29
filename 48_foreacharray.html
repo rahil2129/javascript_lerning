@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach Array</title>
+    <script>
+        var a = ["Rahil", "Mufaddal", "Javed", "Pappu"];
+
+        document.write(a + "<br><br>");
+
+        //Foreach loop function for array 
+        a.forEach(function(value, index){
+            document.write(index + " => " + value + "<br>");
+        });
+
+        document.write("<br>");
+
+        a.forEach(loop); // 
+        function loop(value, index){
+            document.write(index + " => " + value + "<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

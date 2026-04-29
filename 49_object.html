@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        var a = {
+            fname : "Rahil",
+            lname : "Shaikh",
+            age : 26,
+            email : "rahilshaikh.rahu@gmail.com",
+            favMovies : ["Sultan", "Tere Isqh Main", "Pathan"],
+            hobbis : function(){
+                return "Creicket";
+            },
+            fullname : function() {
+                return this.fname + ' Abdul Majid ' + this.lname;
+            },
+            relatice : {
+                friend : "Mufaddal",
+                collegue : "Jamesh"
+            }
+        };
+        document.write(a.fullname());
+
+        console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

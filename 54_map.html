@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script>
+        var ary = [
+            {fname : "Rahil", sname : "Shaikh", age : "36"},
+            {fname : "Mufaddal", sname : "Dhansurawala", age : "26"},
+            {fname : "Mujamil", sname : "Chippa", age : "20"}
+        ];
+
+        var b = ary.map(multiplication);
+        document.write(b);
+
+        function multiplication(x) {
+            return x.fname + " " + x.sname + " " + x.age;
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

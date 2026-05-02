@@ -17,12 +17,28 @@
         }
 
         var b = [
-            {name : "Mufaddal", age : 52},
-            {name : "Modi", age : 62}
+            {names : "Mufaddal", age : 52},
+            {names : "Modi", age : 62}
+        ];
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        for (c = 0; c < b.length; c++) {
+            document.write(b[c].names + " " + b[c].age + "<br>");
+        }
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        var students = [
+            {roll_number : "01", s_name : "Rahil", std : "12th"},
+            {roll_number : "02", s_name : "Mufaddal", std : "12th"},
+            {roll_number : "03", s_name : "Arsh", std : "10th"},
+            {roll_number : "04", s_name : "Ammar", std : "5th"}
         ];
 
-        for (c = 0; c <= b.length; c++) {
-            document.write(b[c].name + " " + b[c].age + "<br>");
+        console.log(students);
+        for (a = 0; a < students.length; a++) {
+            document.write(students[a].roll_number + " " +  students[a].s_name + " " + students[a].std +"<br>");
         }
     </script>
 </head>

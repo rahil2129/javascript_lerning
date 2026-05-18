@@ -106,7 +106,8 @@ Attributes (It will return Attribute)
 
 /* Add classlist method added the class in targeted tag */
 // document.querySelector("#header").addEventListener('click', function(){
-//     this.classList.add("xyz", "lmn");
+//     // this.classList.add("xyz");
+//     // this.classList.add("efg", "xyz");
 // });
 
 /* Remove classlist method remove the class from targeted tag */
@@ -122,17 +123,17 @@ Attributes (It will return Attribute)
 /* Length classlist method return the Length of class */
 // document.querySelector("#header").addEventListener('click', function(){
 //     var a = this.classList.length;
-//     console.log(a);
+//     alert(a);
 // });
 
 /* Item classList method as per index we can get the class name */
 // document.querySelector("#header").addEventListener('click', function(){
-//     var a = this.classList.item(0);
+//     var a = this.classList.item(2);
 //     console.log(a);
 // });
 
 /* Comtains ClassList method check the class exists or not and return true false */
 // document.querySelector("#header").addEventListener('click', function(){
-//     var a = this.classList.contains('test');
+//     var a = this.classList.contains('lmn');
 //     console.log(a);
 // });

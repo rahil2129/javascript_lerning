@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Moveto and MoveBy</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open window</button>
+    <button onclick="wmoveTo()">Move To</button>
+    <button onclick="wmoveBy()">Move By</button>
+    <button onclick="wcolse()">Close Window</button>
+    <script>
+        var wName;
+        function openWindow() {
+            wName = window.open("", "", "width=500px,height=400px,left=100px,top=100px")
+            wName.document.write('<h1>This is my new window</h1>');
+        }
+
+        function wmoveTo() {
+            wName.moveTo(200,200);
+        }
+
+        function wmoveBy() {
+            wName.moveBy(200,200);
+        }
+
+        function wcolse() {
+            wName.close();
+        }
+    </script>
+</body>
+</html>

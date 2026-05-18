@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window ReSizeTo and ReSizeBy</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="wreSizeTo()">ReSize To</button>
+    <button onclick="wreSizeBy()">ReSize By</button>
+    <button onclick="wClose()">Close Window</button>
+    <script>
+        var nWindow;
+        function openWindow() {
+            nWindow = window.open("", "", "width=100px,height=100px,left=100px,top=100px");
+            nWindow.document.write("<h1>My name is Rahil Shaikh Abdul Majid");
+        }
+
+        function wreSizeTo() {
+            nWindow.resizeTo(600,400);
+        }
+
+        function wreSizeBy() {
+            nWindow.resizeBy(600,400);
+        }
+
+        function wClose() {
+            nWindow.close(600,400);
+        }
+    </script>
+</body>
+</html>

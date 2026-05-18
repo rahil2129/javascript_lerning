@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Width and outer width</title>
+</head>
+<body onresize="windowFunction()">
+    
+    <script>
+        function windowFunction() {
+            console.clear();
+            var iheigth = window.innerHeight;
+            console.log("inner height : " + iheigth);
+
+            var oheigth = window.outerHeight;
+            console.log("outer height : " + oheigth);
+
+            var iwidth = window.innerWidth;
+            console.log('Inner width : ' + iwidth);
+
+            var owidth = window.outerWidth;
+            console.log('outer width : ' + owidth);
+        }
+    </script>
+</body>
+</html>

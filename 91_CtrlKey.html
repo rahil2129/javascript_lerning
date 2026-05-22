@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CtrlKey, AltKey, ShiftKey and MetaKey</title>
+    <style>
+        #box{
+            width: 500px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <input type="text" id="key-check">
+    <script>
+        var target = document.querySelector("#key-check");
+        target.addEventListener('keydown', function(e){
+            console.clear();
+            // var ctrl = e.ctrlKey;
+            // if (ctrl) {
+            //     console.log('Control key pressed.');
+            // } else{
+            //     console.log('Control key not pressed.');
+            // }
+
+            // var alt = e.altKey;
+            // if (alt) {
+            //     console.log('Alt key pressed.');
+            // } else{
+            //     console.log('Alt key not pressed.');
+            // }
+
+            // var shift = e.shiftKey;
+            // if (shift) {
+            //     console.log('Shift key pressed.');
+            // } else{
+            //     console.log('Shift key not pressed.');
+            // }
+
+            // var meta = e.metaKey;
+            // if (meta) {
+            //     console.log('Meta key pressed.');
+            // } else{
+            //     console.log('Meta key not pressed.');
+            // }
+
+            var msg;
+            switch(true) {
+                case e.ctrlKey:
+                msg = "Control key pressed";
+                break;
+                case e.altKey:
+                msg = "AlT key pressed";
+                break;
+                case e.shiftKey:
+                msg = "Shift key pressed";
+                break;
+                case e.metaKey:
+                msg = "Meta key pressed";
+                break;
+                default:
+                msg = "Other key pressed";
+                break;
+            }
+            console.log(msg);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetX and offsetY</title>
+    <style>
+        #box{
+            margin: 100px;
+            background-color: aqua;
+            width: 500px;
+            height: 250px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var target = document.querySelector('#box');
+        target.addEventListener("click", function(e){
+            console.clear();
+            console.log('offsetX : ' + e.offsetX);
+            console.log('offsetY : ' + e.offsetY);
+        });
+    </script>
+</body>
+</html>

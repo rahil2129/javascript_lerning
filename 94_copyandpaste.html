@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy and paste</title>
+    <style>
+        #myinput{
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="myinput">
+    <script>
+        var target = document.querySelector('#myinput');
+        target.addEventListener('cut', function(){
+            console.clear()
+            console.log("you have cut");
+        });
+        target.addEventListener('copy', function(){
+            console.clear()
+            console.log("you have copy text");
+        });
+        target.addEventListener('paste', function(){
+            console.clear()
+            console.log("you have paste");
+        });
+    </script>
+</body>
+</html>
